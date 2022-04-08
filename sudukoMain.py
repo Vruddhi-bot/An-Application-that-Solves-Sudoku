@@ -3,8 +3,9 @@ import os
 os.environ['TF_CPP_MIN_LOG_LEVEL'] = '3'
 from utlis import *
 import sudukoSolver
-import opencv as cv2
-
+import cv2
+# import sys
+# sys.path.append('C:\Users\Vruddhi Parag Tolia\AppData\Local\Programs\Python\Python310\Lib\site-packages\cv2\cv2.py')
 
 ########################################################################
 pathImage = "Resources/2.jpg"
@@ -80,7 +81,7 @@ if biggest.size != 0:
 
     imageArray = ([img,imgThreshold,imgContours, imgBigContour],
                   [imgDetectedDigits, imgSolvedDigits,imgInvWarpColored,inv_perspective])
-    stackedImage = stackImages(imageArray, 1)
+    stackedImage = stackImages(imageArray, 0.5)
     cv2.imshow('Stacked Images', stackedImage)
 
 else:

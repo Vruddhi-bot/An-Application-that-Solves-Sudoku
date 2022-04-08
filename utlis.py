@@ -1,4 +1,4 @@
-import opencv as cv2
+import cv2
 import numpy as np
 # import sys
 # sys.path.append('C:\Users\Vruddhi Parag Tolia\AppData\Local\Programs\Python\Python310\Lib\site-packages')
