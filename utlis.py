@@ -1,11 +1,13 @@
-import cv2
+import opencv as cv2
 import numpy as np
+# import sys
+# sys.path.append('C:\Users\Vruddhi Parag Tolia\AppData\Local\Programs\Python\Python310\Lib\site-packages')
 from tensorflow.keras.models import load_model
 
 
 #### READ THE MODEL WEIGHTS
 def intializePredectionModel():
-    model = load_model('Resources/myModel.h5')
+    model = load_model('Resources\myModel.h5')
     return model
 
 
