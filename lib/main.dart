@@ -41,16 +41,16 @@ class MyApp extends StatelessWidget {
     );
   }
 }
-class SplashScreen extends StatelessWidget {
-  const SplashScreen({Key? key}) : super(key: key);
-
-  @override
-  Widget build(BuildContext context) {
-    return AnimatedSplashScreen(
-      splash: splash,
-      nextScreen:const Sudoku());
-  }
-}
+// class SplashScreen extends StatelessWidget {
+//   const SplashScreen({Key? key}) : super(key: key);
+//
+//   @override
+//   Widget build(BuildContext context) {
+//     return AnimatedSplashScreen(
+//       splash: splash,
+//       nextScreen:const Sudoku());
+//   }
+// }
 
 
 class Sudoku extends StatefulWidget {
@@ -74,7 +74,7 @@ class _SudokuState extends State<Sudoku> {
       return Center(child: SizedBox(height:200,width: 200,child: CircularProgressIndicator()),);
     });
     final request = http.MultipartRequest(
-        "POST",Uri.parse("http://0e8a-182-48-249-157.ngrok.io/upload")
+        "POST",Uri.parse("http://0436-182-48-236-85.ngrok.io/upload")
     );
     final header = {"Content-type":"multipart/form-data","Connection":"keep-alive"};
     request.files.add(http.MultipartFile('image',selectedImg!.readAsBytes().asStream(),selectedImg!.lengthSync(),filename: selectedImg!.path.split("/").last));
