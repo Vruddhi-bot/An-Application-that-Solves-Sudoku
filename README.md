@@ -1,16 +1,20 @@
-# sudoku_solver_application
+### Project Motivation
 
-Sudoku Solver APP
+One day I was browsing through Reddit, I came across a project, It was a sudoku solver using video cam stream. The project was cool, but there was the only thing I didn’t like: it used to crop the sudoku image and give a solved sudoku image solution.
+So I thought why not project back the solution to the original image to make it look like it's solved in the original image?
+Pretty cool right?!
 
-## Getting Started
+### About Project
+The project is simple, take the sudoku image, solve it and project back the solution to the original image, thats all!!
+Well, that was my initial plan, but the execution is another thing.
+Brief project technology description :
 
-This project is a starting point for a Flutter application.
+Get the sudoku block in the image — Python OPEN CV
+Crop the sudoku image and change perspective — Python OPEN CV
+Extract the digits in some ordered manner — Python KNN Model
+Solve the sudoku — Using Backtracking Algorithm 
+Project back the solution into the original image — Python OPEN CV
 
-A few resources to get you started if this is your first Flutter project:
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+![Alt text]("C:\Users\Vruddhi Parag Tolia\Desktop\ss1.png"? "Optional Title")
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
