@@ -16,5 +16,3 @@ Solve the sudoku — Using Backtracking Algorithm
 Project back the solution into the original image — Python OPEN CV
 
 
-![Alt text]("C:\Users\Vruddhi Parag Tolia\Desktop\ss1.png"? "Optional Title")
-
